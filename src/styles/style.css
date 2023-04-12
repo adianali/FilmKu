@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+html{
+  scroll-behavior: smooth;
+}
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  header > filmku-nav > .navbar > .navbar-brand{
+    margin-left: 100px;
+    font-size: 25px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(../img/bacground.jpg);
+    background-size: cover;
+    height: 450px;
+    text-align: center;
+    margin-top: -10px;
+  }
+  .jumbotron .display-4 {
+    margin-top: 17px;
+    color: whitesmoke;
+  }
+  .jumbotron p {
+    color: whitesmoke;
+    font-size: 25px;
+  }
+  .jumbotron hr {
+    border-color:white;
+    width: 100px;
+    border-width: 3px;
+    margin: 0 685px;
+  }
+  
+
+  /* main */
+  main > h4 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  
+  film-item {
+  margin: 5px;
+  max-height: 1000px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.3);
+}
+  film-item img {
+  transition: transform 0.3s ease-in-out;
+}
+
+  film-item:hover img {
+  transform: scale(1.1);
+}
+
+.back-to .btn{
+  background-color: #2e92f0;
+  margin-left: 40%;
+  border: none;
+  border-radius: 25px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-top: 40px;
+}
+.back-to .btn:hover{
+  color: rgb(136, 220, 248) ;
+  -webkit-box-shadow: -1px 9px 27px -8px rgb(136, 220, 248);
+  -moz-box-shadow: -1px 9px 27px -8px rgb(136, 220, 248);
+  box-shadow: -1px 9px 27px -8px rgb(136, 220, 248);
+}
+  
+  /* Footer */
+footer{
+    background-color: #02226c;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+footer > filmku-fott > .sosial{
+    padding: 1rem 0;
+}
+footer> filmku-fott > .sosial a{
+    color: whitesmoke;
+    margin: 1rem;
+}
+footer > filmku-fott > .sosial h4{
+    color: whitesmoke;
+    margin: .5rem;
+}
+footer > filmku-fott > .sosial a:hover{
+    color: rgb(81, 81, 224);
+    transition: .5s;
+}
+footer > filmku-fott > .credit{
+    text-align: center;
+    color: whitesmoke;
+}
+
+@media screen and (min-width: 600px) {
+  .jumbotron {
+    height: 100%;
+    text-align: center;
+    margin-top: -10px;
+  }
+  .jumbotron hr {
+    margin: 0 240px;
+  }
+  .back-to .btn{
+    margin-left: 25%;
+  }
+  film-list {
+    display: grid;
+    grid-template-columns: 350px;
+    grid-row-gap: 16px;
+    margin-left: 70px;
+    padding: 16px;
+}
+  
+}
+@media screen and (min-width: 900px){
+  film-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 16px;
+    padding: 16px;
+}
+.jumbotron hr {
+  margin: 0 390px;
+}
+.back-to .btn{
+  margin-left: 35%;
+}
+
+}
+@media screen and (min-width: 1200px) {
+  film-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 16px;
+}
+}
+
